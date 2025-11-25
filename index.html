@@ -8,16 +8,17 @@
     <!--  -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
-    <!-- -----------------------------header -->
+    <!-- -----------------------------header----------------------->
     <header class="header">
         <div class="container">
             <nav class="header__nav">
                 <img class="header__img" src="./imeges/c_header_logo.png" alt="coffee logo">
-                <ol class="header__list">
+                <ol class="header__list" data-aos="fade-left">
                     <li class="header__item"><a class="header__link" href="#">HOME</a></li>
                     <li class="header__item"><a class="header__link" href="#">ABOUT US</a></li>
                     <li class="header__item"><a class="header__link" href="#">Create your plan</a></li>
@@ -26,14 +27,15 @@
         </div>
     </header>
     <!-- -------------------------head -->
-
     <head class="head">
         <div class="container">
             <div class="head__container">
-                <h1 class="head__title">Great coffee made simple.</h1>
-                <p class="head__text">Start your mornings with the world’s best coffees. Try our expertly curated
-                    artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
-                <button class="head__btn"><a class="head__link" href="#">Create your plan</a></button>
+                <div class="head__box">
+                    <h1 class="head__title">Great coffee made simple.</h1>
+                    <p class="head__text">Start your mornings with the world’s best coffees. Try our expertly curated
+                        artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
+                    <button class="head__btn"><a class="head__link" href="#">Create your plan</a></button>
+                </div>
             </div>
         </div>
     </head>
@@ -50,7 +52,7 @@
                     <img class="collect__img__two" src="./imeges/c_section_collect 4.png" alt="Danche">
                 </div>
                 <ol class="collect__list">
-                    <li class="collect__item">
+                    <li class="collect__item" data-aos="fade-left" data-aos-duration="2000">
                         <h2 class="collect__title">Gran Espresso</h2>
                         <p class="collect__text">Light and flavorful blend with cocoa and black pepper for an intense
                             experience</p>
@@ -152,6 +154,11 @@
             </nav>
         </div>
     </footer>
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

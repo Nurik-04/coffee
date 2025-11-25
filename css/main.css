@@ -10,6 +10,7 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  border: 1px dashed gainsboro;
 }
 
 .header {
@@ -18,6 +19,9 @@
   top: 0;
   right: 0;
   left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
 }
 
 .header__nav {
@@ -26,8 +30,6 @@
   align-items: center;
   padding: 0 50px;
   height: 100px;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
 }
 
 .header__img {
@@ -38,7 +40,7 @@
 .header__list {
   display: flex;
   justify-content: space-between;
-  width: 283px;
+  width: 383px;
   height: 15px;
   align-items: center;
 }
@@ -49,10 +51,12 @@
   display: inline-block;
   border-radius: 50px;
   padding: 0 10px;
-  transition: 1s all;
+  transition: 2s all;
 }
 
 .header__link {
+  width: 100%;
+  height: 100%;
   font-family: Barlow;
   font-weight: 700;
   font-size: 12px;
@@ -63,13 +67,77 @@
   color: #83888F;
 }
 
+.header__item:hover {
+  display: inline-block;
+  transform: scale(1.2);
+  box-shadow: 10px 10px 70px rgb(169, 168, 168);
+}
+
 .header__link:hover {
   color: #333D4B;
 }
 
-.header__item:hover {
-  display: inline-block;
-  transform: scale(1.2);
-  box-shadow: 10px 10px 70px rgb(187, 186, 186);
-  color: #333D4B;
+.head {
+  width: 100%;
+  background-image: url(../imeges/Bitmap.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.head__container {
+  margin-top: 100px;
+  width: 1100px;
+  height: 600px;
+  padding: 50px;
+  border: 1px solid wheat;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  padding: 117px;
+}
+
+.head__box {
+  width: 493px;
+  height: 367px;
+}
+
+.head__title {
+  width: 493px;
+  height: 145px;
+  font-family: Fraunces 9pt;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #FEFCF7;
+  margin-bottom: 32px;
+}
+
+.head__text {
+  width: 445px;
+  height: 78px;
+  opacity: 0.8;
+  font-family: Barlow;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+  margin-bottom: 56px;
+}
+
+.head__btn {
+  width: 217px;
+  height: 56px;
+  border-radius: 6px;
+  border: none;
+  background-color: #66D2CF;
+}
+
+.head__link {
+  font-family: Barlow 9pt;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #FEFCF7;
 }/*# sourceMappingURL=main.css.map */
