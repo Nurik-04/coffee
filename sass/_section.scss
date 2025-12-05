@@ -79,7 +79,7 @@
 .choose{
     width: 1100px;
     height: 577px;
-    background-color: #2C343E;
+    // background-color: #2C343E;
     padding-top: 100px;
     display: flex;
     flex-direction: column;
@@ -273,4 +273,10 @@
     transform: scale(1.1);
     transition: 500ms ease-in-out;
 }
-
+// -----------------------------------
+// -----------------------------------
+.plan section{
+    background: linear-gradient(135deg, #2C343E, #93561d);
+    width: 1100px;
+    height: 577px;
+}
